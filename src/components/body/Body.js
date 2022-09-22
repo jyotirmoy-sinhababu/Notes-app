@@ -13,10 +13,10 @@ const Body = () => {
 
   return (
     <div className='body-cnt'>
-      <div className='search-cnt'>
-        <input type='search' className='search-bar' placeholder='search' />
-      </div>
+      {/* <div className='search-cnt'></div> */}
       <div className='btn-cnt'>
+        <input type='search' className='search-bar' placeholder='search' />
+
         <button className='add-btn' onClick={openModal}>
           <svg
             xmlns='http://www.w3.org/2000/svg'
@@ -35,7 +35,7 @@ const Body = () => {
       </div>
       <div className='notes-cnt'></div>
       <div className='modal-cnt'>
-        <Modal isOpen={isOpen}>
+        <Modal isOpen={isOpen} setIsOpen={setIsOpen}>
           <Notes />
         </Modal>
       </div>
