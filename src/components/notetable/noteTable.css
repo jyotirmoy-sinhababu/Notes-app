@@ -1,0 +1,43 @@
+.student-data-box {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  width: 1000px;
+  margin: 10px 0;
+}
+.student-data {
+  display: flex;
+  justify-content: space-around;
+  width: 800px;
+}
+.student-data-btn {
+  height: 40px;
+  gap: 1.2rem;
+  display: flex;
+  width: 200px;
+  border-radius: 0.6rem;
+  color: #2ca4d8;
+}
+.student-data-btn:hover > .edit-btn {
+  visibility: visible;
+}
+.student-data-btn:hover > .delete-btn {
+  visibility: visible;
+}
+.edit-btn,
+.delete-btn {
+  height: 40px;
+  width: 100px;
+  border-radius: 0.6rem;
+  background-color: transparent;
+}
+
+.edit-btn {
+  border: 1px solid #2ca4d8;
+  color: #2ca4d8;
+}
+
+.delete-btn {
+  border: 1px solid rgba(255, 0, 0, 0.5);
+  color: rgba(255, 0, 0, 0.5);
+}
