@@ -1,0 +1,11 @@
+.nav-cnt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  margin: 5px;
+}
+
+.nav-heading {
+  font-size: 2.2rem;
+}
