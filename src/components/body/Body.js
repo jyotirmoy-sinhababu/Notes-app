@@ -1,14 +1,23 @@
 import React from 'react';
+import { useState } from 'react';
+import Modal from '../../modal/Modal';
+import Notes from '../notes/Notes';
 import './body.css';
 
 const Body = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const openModal = () => {
+    setIsOpen(true);
+  };
+
   return (
     <div className='body-cnt'>
       <div className='search-cnt'>
         <input type='search' className='search-bar' placeholder='search' />
       </div>
       <div className='btn-cnt'>
-        <button className='add-btn'>
+        <button className='add-btn' onClick={openModal}>
           <svg
             xmlns='http://www.w3.org/2000/svg'
             width='16'
@@ -25,7 +34,11 @@ const Body = () => {
         </button>
       </div>
       <div className='notes-cnt'></div>
-      <div className='modal-cnt'></div>
+      <div className='modal-cnt'>
+        <Modal isOpen={isOpen}>
+          <Notes />
+        </Modal>
+      </div>
     </div>
   );
 };
