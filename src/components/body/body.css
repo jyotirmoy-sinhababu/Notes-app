@@ -1,3 +1,10 @@
+.body-cnt {
+  border: 1px solid red;
+  width: 100%;
+  width: auto;
+  padding: 5px;
+}
+
 .search-cnt {
   display: flex;
   justify-content: center;
@@ -13,4 +20,27 @@
   border-radius: 7px;
   font-size: larger;
   padding: 5px;
+}
+
+.btn-cnt {
+  width: 100%;
+  width: auto;
+  padding: 5px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.add-btn {
+  height: 53px;
+  width: 53px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  background-color: aliceblue;
+}
+
+.bi-plus-lg {
+  color: blue;
+  height: 33px;
+  width: 33px;
 }
